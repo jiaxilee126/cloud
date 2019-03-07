@@ -7,17 +7,14 @@ Cloud 的仓库
 软件架构说明
 
 
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
+#### 项目演示
+https:demo.lijiaxi.com.cn
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 新建数据库，并导入doc中的脚本
+2. 依次启动eureka，config，user，admin项目
+3. 浏览器输入localhost:9099
 
 #### 参与贡献
 
