@@ -1,23 +1,36 @@
 spring:
   application:
     name: user
-  datasource:
-    url: jdbc:mysql://39.108.141.63:3306/demo-user?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
-    username: root
-    password: THTSS1000c
+  cloud:
+    config:
+      discovery:
+        service-id: config
+        enabled: true
+      profile: pro
+#  datasource:
+#    url: jdbc:mysql://39.108.141.63:3306/demo-user?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+#    username: root
+#    password: THTSS1000c
 #  cloud:
 #    config:
 #      discovery:
 #        enabled: true
 #        service-id: CONFIG
 #      profile: dev
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://39.108.141.63:8100/eureka/
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: 39.108.141.63:8101
 eureka:
   client:
     service-url:
-      defaultZone: http://39.108.141.63:8100/eureka/
-  instance:
-    prefer-ip-address: true
-    instance-id: 39.108.141.63:8101
+      defaultZone: http://localhost:9001/eureka/
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: 39.108.141.63:8101
 server:
   port: 9005
 ribbon:
