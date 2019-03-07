@@ -1,0 +1,120 @@
+<!--pages/paper/paper.wxml-->
+<!-- 文章卡片区域 -->
+<view  style='margin-b0ttom:15px;height:40px;'>
+ 
+ 
+<i-row >
+    <i-col span="24" i-class="col-class" style="text-align:center;line-height:100%;margin-buttom:15px;display:block;">个人博客</i-col>
+</i-row>
+</view>
+  <view wx:for="{{papers}}">
+    <i-card title="{{item.title}}">
+      <view slot="content">
+        <view style='padding:15px'>{{item.description}}
+        </view>
+      
+      </view>
+      <view slot="footer">
+        <i-row>
+            <i-col span="8" i-class="col-class">
+              <navigator url="detail/detail?id={{item.id}}" hover-class="navigator-hover">
+                <view type="default">more......</view>
+              </navigator>
+            </i-col>
+            <i-col span="16" i-class="col-class">
+              <view>
+                <i-tag 
+                    class="i-tags" 
+                    style="float:right"
+                    name="redis" 
+                    color="blue">
+                    {{item.type}}
+                </i-tag>
+              </view>
+            </i-col>
+        </i-row>   
+      </view>
+    </i-card>
+  </view>
+
+<i-card title="使用redis实现某类型的排序榜思路与设计方案">
+  <view slot="content">
+    <view style='padding:15px'>使用redis的有序集合Sorted Set.集合内不允许有重复元素，
+      每个元素会有一个分数，是根据分数进行排序。集合是通过哈希表实现的。
+      Redis的哈希是一个String类型的field和value的映射表。适合存储对象
+      设计思路.......
+    </view>
+   
+  </view>
+  <view slot="footer">
+    <i-row>
+        <i-col span="8" i-class="col-class"><view>more...</view></i-col>
+        <i-col span="16" i-class="col-class">
+          <view>
+            <i-tag 
+                class="i-tags" 
+                style="float:right"
+                name="redis" 
+                color="blue">
+                Redis
+            </i-tag>
+          </view>
+        </i-col>
+    </i-row>   
+  </view>
+</i-card>
+<i-card title="Spring 实现对事务的管理">
+  <view slot="content">
+    
+    <view style='padding:15px'>事务（Transaction），一般是指要做的或所做的事情。在计算机
+      术语中是指 访问并可能更新数据库中各种数据项的一个程序执行单元(unit)。事务通常由高级数据
+      库操纵语言或编程语言（如SQL，C++或Java）书写的.......
+    </view>
+   
+  </view>
+  <view slot="footer">
+    <i-row>
+        <i-col span="8" i-class="col-class"><view>more...</view></i-col>
+        <i-col span="16" i-class="col-class">
+          <view>
+            <i-tag 
+                class="i-tags" 
+                style="float:right"
+                name="redis" 
+                color="blue">
+                Spring
+            </i-tag>
+          </view>
+        </i-col>
+    </i-row>   
+  </view>
+</i-card>
+
+<i-card title="Spring Aop实现日志记录">
+  <view slot="content">
+    
+    <view style='padding:15px'>切面（Aspect）：就是我们定义的 逻辑类，我们要做的操作。
+      连接点（Joinpoint）：在程序执行过程中某个特定的点，比如某方法调用的时候或者处理异常的
+      时候。在Spring AOP中，一个连接点总是表示一个方法的执行。在上例中就是save方法
+      通知（Advice）：在切面的某个特定的连接点上执行的动作.......
+    </view>
+   
+  </view>
+  <view slot="footer">
+    <i-row>
+        <i-col span="8" i-class="col-class"><view>more...</view></i-col>
+        <i-col span="16" i-class="col-class">
+          <view>
+            <i-tag 
+                class="i-tags" 
+                style="float:right"
+                name="redis" 
+                color="blue">
+                Spring
+            </i-tag>
+          </view>
+        </i-col>
+    </i-row>   
+  </view>
+</i-card>
+

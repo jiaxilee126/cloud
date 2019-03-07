@@ -1,0 +1,33 @@
+
+<view class="caption-wrap">
+    <text class="caption-title">{{projectdetail.name}} </text>
+    <i-collapse name="{{name}}" accordion>
+        <i-collapse-item
+                name="name1"
+                title="项目简介"
+                i-class-title="collapse-item-title"
+                i-class-content="collapse-item-content">
+            <view slot="content">
+                {{projectdetail.content}}
+            </view>
+        </i-collapse-item>
+        <i-collapse-item
+                name="name2"
+                title="技术架构"
+                i-class-title="collapse-item-title"
+                i-class-content="collapse-item-content">
+            <view slot="content" i-class-content="green-text">
+                {{projectdetail.usedtech}}
+            </view>
+        </i-collapse-item>
+        <i-collapse-item
+                name="name3"
+                title="个人职责"
+                i-class-title="collapse-item-title"
+                i-class-content="collapse-item-content">
+            <view slot="content">
+                {{projectdetail.responsibility}}
+            </view>
+        </i-collapse-item>
+    </i-collapse>
+</view>

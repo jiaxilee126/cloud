@@ -1,0 +1,20 @@
+<view >
+
+  <view class='content'>
+    <view wx:if='{{current == "paperpage"}}'>
+      <paper papers="{{paper}}" current="{{paper}}"/>
+    </view>
+    <view wx:if='{{current == "tech"}}'>
+      <tech papers="{{paper}}" />
+    </view>
+    <view wx:if='{{current == "minepage"}}'>
+      <mine />
+    </view>
+  </view>
+</view>
+
+<i-tab-bar current="{{ current }}" bindchange="handleChange" fixed="true">
+  <i-tab-bar-item key="paperpage" icon="homepage" current-icon="homepage_fill"  currentTab="0" title="home"></i-tab-bar-item>
+  <i-tab-bar-item key="tech" icon="browse" current-icon="browse_fill" title="tech"></i-tab-bar-item>
+  <i-tab-bar-item key="minepage" icon="mine" current-icon="mine_fill" title="my"></i-tab-bar-item>
+</i-tab-bar>

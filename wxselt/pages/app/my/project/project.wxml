@@ -1,0 +1,5 @@
+<!--pages/app/my/project/project.wxml-->
+<text>pages/app/my/project/project.wxml</text>
+<i-panel class="cell-panel-demo">
+    <i-cell title="单行列表" is-link value="详细信息"></i-cell>
+</i-panel>

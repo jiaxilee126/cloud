@@ -1,0 +1,10 @@
+<view style='margin-bottom:15px;height:40px;'>
+  <i-row>
+    <i-col span="24" i-class="col-class" style="text-align:center;line-height:100%;margin-buttom:15px;display:block;">技能说明</i-col>
+  </i-row>
+</view>
+<view wx:for="{{papers}}">
+  <i-card title="{{item.title}}" extra="{{item.level}}" thumb="{{item.icon}}">
+    <view slot="content">{{item.content}}</view>
+  </i-card>
+</view>

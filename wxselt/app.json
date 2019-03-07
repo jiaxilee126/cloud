@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/app/self",
+    
+    "pages/app/my/project/project",
+    "pages/app/detail/detail",
+    "pages/app/my/programdetail/programdetail",
+    "pages/app/my/selfprogress/gress",
+    "pages/app/my/selfprogram/gram"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

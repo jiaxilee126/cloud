@@ -1,0 +1,14 @@
+
+<i-steps direction="vertical">
+  <view wx:for="{{gress}}">
+    <i-step icon="coordinates">
+        <view slot="title">
+            {{item.timenode}}
+        </view>
+        <view slot="content">
+            {{item.content}}
+        </view>
+    </i-step>
+  </view>
+</i-steps>
+

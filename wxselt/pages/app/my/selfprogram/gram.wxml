@@ -1,0 +1,7 @@
+<!--pages/app/my/selfprogram/gram.wxml-->
+<i-panel class="cell-panel-demo">
+  <view wx:for="{{gram}}">
+    <i-cell title="{{item.name}}" is-link url="../programdetail/programdetail?id={{item.id}}" value="详细信息"></i-cell>
+  </view>
+</i-panel>
+
