@@ -6,9 +6,13 @@ Cloud 的仓库
 #### 软件架构
 软件架构说明
 
+![](http://qiniu.lijiaxi.com.cn/后台架构.png)
 
 #### 项目演示
 https:demo.lijiaxi.com.cn
+
+
+![](http://qiniu.lijiaxi.com.cn/admin.gif)
 
 #### 使用说明
 
